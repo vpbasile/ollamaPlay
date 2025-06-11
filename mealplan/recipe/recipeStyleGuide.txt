@@ -1,73 +1,56 @@
-📌 Recipe Style Guide
+I would like to store the recipes in the following format
 
-    JSON format
-        The recipe should be stored like so:
-            {
-                title:
-                subtitle:
-                miseenplace: [
-                    {ingredient: "Red Onion", preparation: "Finely diced", amount: [[1,"Cup"],[1,"large"]]},
-                    {group: "Dry ingredients", ingredients: [
-                        
-                    ]}
+export const stew = {
+    title: "Chicken Peanut Stew",
+    subtitle: "Makes 2 servings.  Great over rice.",
+    sections: [
+        {
+            title: "You will need", list: [
+                "Red Bell Pepper -1",
+                "Onion - 1",
+                "Plum Tomato - 3",
+                "Baby Spinach - 1/2 pound",
+                "Lime - 2",
+                "Ginger Paste",
+                "Garlic Paste",
+                "Sesame Oil",
+                "Chili Powder",
+                "Brown Sugar or Honey",
+                "Peanut Butter Powder",
+                "Chicken Thighs - 2 ",
+                "Broth or Stock - 2 Cups"]
+        },
+        {
+            title: "Marinate the chicken", list: [
+                "Wash, dry, and zest the limes into your marinating vessel and cut them in half.",
+                "Combine the 2 TBSP oil, 1 tsp sesame oil, the zest of the whole lime and juice of half, ginger, garlic, 2 tsp brown sugar or honey, 1 tsp salt, lots of black pepper,½ tsp chili powder",
+                "Slice the chicken into bite-size pieces.  Marinate the chicken at least 15 minutes"
 
-                    ]
-                ]
+            ]
+        },
+        {
+            title: "Prep", list: [
+                "Wash and dry produce",
+                "Dice tomatoes",
+                "Slice onion and pepper and cut into bite-size pieces",
+                "Measure 2 C stock",
+                "Measure 4 TBSP or ¼ Cup peanut butter powder",
+                "Measure ½ # spinach",
+            ]
+        },
+        {
+            title: "Cook", list: [
+                "                Heat a pan over medium-high heat and add the chicken mixture. Let it cook undisturbed for two minutes, then turn the mixture over and cook for another two minutes to let it brown. Stir, then cook for another five minutes while stirring occasionally.",
+                "Set the chicken aside and cook the onions and peppers until soft/translucent.  Up to 7 min.",
+                "If you're going to add more garlic, now's the time.  Let it cook until fragrant.",
+                "Add the broth, powdered peanut butter, chicken, and tomatoes. Bring it to a boil, reduce it to a simmer, and cook for 20-25 minutes uncovered.  ",
+                "Taste and adjust seasonings (salt, pepper, chili powder, brown sugar) as needed.",
+                "Stir in the spinach, and turn off the heat as soon as it wilts.",
+                "Add fresh lime juice",
 
-            }
 
+            ]
+        }
+    ]
+}
 
-    Title & Subtitle
-
-        Provide a clear dish name as the title.
-
-        Use the subtitle to list:
-            Serving suggestions (e.g., “Serve over rice or toast”)
-            Garnishes or toppings (e.g., “Top with green onion or chili flakes”)
-
-    Mise en Place (Ingredients List)
-
-        Ingredients sorted in this order (but do not show category labels):
-            Dry ingredients
-            Liquid ingredients
-            Vegetables
-            Dairy
-            Fresh herbs
-            Onions
-            Garlic, Ginger, other Aromatics
-            Animal products (e.g., meat, eggs)
-
-        Use abbreviations for units where appropriate:
-        tsp, TBSP, C, lb, etc.
-
-        If an ingredient is used in more than one step with different quantities, list it separately for each use.
-
-        Equivalents are formatted like:
-        1 C or 2 sticks
-
-        Group ingredients only if they are intentionally mixed before use (e.g., spice mix, marinade).
-
-    Instructions
-
-        Use a numbered list.
-
-        Every step starts with a hook: a short, action-oriented summary of the step (e.g., “Toast the seeds.” “Add the garlic.”).
-
-        If a time-based wait or action is included, begin a new step after it.
-
-        Do not abbreviate units in this section (write “tablespoons,” not “TBSP”).
-
-        Refer to ingredients using the shortest descriptive name necessary.
-
-        If preheating the oven is required, this must be Step 1.
-
-        Notes may be inserted between steps and must begin with NOTE: but are not numbered.
-
-Presentation:
-    Title as an H1
-    Subtitle as ?????
-    H2 Mise em place 
-        Bulleted list, with sublist indentations for grouped ingredients.
-        Each ingredient follows this format:
-        Ingredient (Preparation) – Amount
-        Example: Red Onion (Finely Diced) – 2 C or 1 large
